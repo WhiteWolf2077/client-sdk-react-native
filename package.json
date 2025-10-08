@@ -6,7 +6,6 @@
   "types": "dist/vapi.d.ts",
   "scripts": {
     "test": "jest",
-    "prepare": "npm install && npm run build",
     "build": "tsc && tsc --declaration",
     "generate-api": "./generate-api.sh",
     "update": "./update.sh",
