@@ -6,6 +6,7 @@
   "types": "dist/vapi.d.ts",
   "scripts": {
     "test": "jest",
+    "prepare": "npm install && npm run build",
     "build": "tsc && tsc --declaration",
     "generate-api": "./generate-api.sh",
     "update": "./update.sh",
@@ -26,14 +27,14 @@
     "events": "^3.3.0"
   },
   "peerDependencies": {
-    "@daily-co/react-native-daily-js": ">=0.81.0",
-    "@daily-co/react-native-webrtc": "124.0.6-daily.1",
+    "@daily-co/react-native-daily-js": "^0.81.0",
+    "@daily-co/react-native-webrtc": "^124.0.6-daily.1",
     "@react-native-async-storage/async-storage": "2.2.0",
     "react-native-background-timer": "^2.4.1"
   },
   "devDependencies": {
-    "@daily-co/react-native-daily-js": ">=0.81.0",
-    "@daily-co/react-native-webrtc": "124.0.6-daily.1",
+    "@daily-co/react-native-daily-js": "^0.81.0",
+    "@daily-co/react-native-webrtc": "^124.0.6-daily.1",
     "@react-native-async-storage/async-storage": "2.2.0",
     "react-native-background-timer": "^2.4.1",
     "@types/jest": "^29.5.14",
